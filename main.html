@@ -5,50 +5,59 @@
         <title>Project: Event invite</title>
 
         <style>
-        	body{
-        		background-color : rgb(255, 255, 150);
-        		font-family : monospace;
-        	}
-        	.banner{
-        		background-color : rgb(0, 200, 0);
-        		height : 50px;
-        	}
-        	#mainTitle{
-        		font-family : fantasy;
-        		text-align : center;
-        	}
-        	.topImages{
-        		float : top;
-        		margin : 20px;
-        		padding : 10px;
+            body{
+                background-color : rgb(255, 255, 150);
+                font-family : monospace;
+                margin : 5px;
+            
+            }
+            .banner{
+                background-color : rgb(0, 200, 0);
+                height : 50px;
+            }
+            #mainTitle{
+                font-family : fantasy;
+                text-align : center;
+            }
+            .topImages{
+                float : top;
+                margin : 20px;
+                padding : 0px;
+                width : 100%;
  
-        	}
-        	#gameList{
-        		text-decoration : none;
-        	}
-        	#topLeftImage{
-        		float : left;
-        		width : 50%;
-        		padding :5px;
-        		
-        	}
-        	#topRightImage{
-        		float : right;
-        		width : 50%;
-        		padding : 5px;
-        	}
+            }
+            #gameList{
+                text-decoration : none;
+            }
+            #topLeftImage{
+                float : left;
+                width : 50%;
+            
+                
+            }
+            #topRightImage{
+                float : right;
+                width : 50%;
+            
+            }
             #eventInfo{
                 position : relative;
                 float : left;
-                margin : 10px;
+                margin-bottom : 50px;
                 border : 10px ridge red;
                 padding : 5px;
-                width : 100%;
                 
             }
             #eventDescription{
-        
+                position : relative;
+                float : left;
+                border : 5px ridge rgb(158, 158, 158);
+                padding : 10px;
                 
+                
+            }
+            #listOfGames{
+                float : left;
             }
 
             
@@ -64,92 +73,93 @@
         <!-- IMAGES UNDER TITLE -->
         <div class = "topImages">
 
-        	<div id = "topLeftImage">
-       			<img class = "topImage" src = "https://upload.wikimedia.org/wikipedia/en/6/66/WarcraftIII.jpg" alt = "picture of game">
-       		</div>
-       		<div id = "topRightImage">
-       	 		<img class = "topImage" src = "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" alt = "picture of game">
-       	 	</div>
+            <div id = "topLeftImage">
+                <img class = "topImage" src = "https://upload.wikimedia.org/wikipedia/en/6/66/WarcraftIII.jpg" alt = "picture of game">
+            </div>
+            <div id = "topRightImage">
+                <img class = "topImage" src = "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" alt = "picture of game">
+            </div>
 
-       	</div>
+        </div>
 
-       	 <!-- BASIC EVENT INFO -->
+         <!-- BASIC EVENT INFO -->
 
-	    <div id = "eventInfo">
-	        <table>
-	        	<tr>
-	        		<td> <strong>When : </strong>December 15, 2020 at 5:00 pm </td>
-	        	</tr>	
-	        	<tr>	
-	        		<td> <strong>Length of Event : </strong>5 hours </td>
-	        	</tr>
-	        	<tr>
-	        		<td> <strong>Where : </strong>Discord @ randomServer </td>
-	        	</tr>
-	        	<tr><div id = "gameList">
-		        		<td> <strong>Games : </strong><a href = ""><em>Uther Party,</em></a><a href = ""><em> Warcraft 3 Grand Prix,</em></a><a href = ""><em> Warchasers</em></a> </td>
-	        		</div>
-	        	</tr>
-	        	<tr>
-	        		<td> <strong></strong> </td>
-	        	</tr>
-	        </table>
-	    </div>
+        <div id = "eventInfo">
+            <table>
+                <tr>
+                    <td> <strong>When : </strong>December 15, 2020 at 5:00 pm </td>
+                </tr>   
+                <tr>    
+                    <td> <strong>Length of Event : </strong>5 hours </td>
+                </tr>
+                <tr>
+                    <td> <strong>Where : </strong>Discord @ randomServer </td>
+                </tr>
+                <tr><div id = "gameList">
+                        <td> <strong>Games : </strong><a href = ""><em>Uther Party,</em></a><a href = ""><em> Warcraft 3 Grand Prix,</em></a><a href = ""><em> Warchasers</em></a> </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td> <strong></strong> </td>
+                </tr>
+            </table>
+        </div>
 
 
         <!-- DESCRIPTION OF EVENT -->
         <div id = "eventDescription">
-        	<p>Join the Warcraft 3 Hive Workshop community for a custom game night on December 15th at 5 pm. We will be playing many popular custom games like Uther Party, Warcraft 3 Grand Prix, Warchasers and more! Those who particiapate will reeive a unique badge to remember the event that will show up on their forum posts.</p>
+            <p>Join the Warcraft 3 Hive Workshop community for a custom game night on December 15th at 5 pm. We will be playing many popular custom games like Uther Party, Warcraft 3 Grand Prix, Warchasers and more! Those who particiapate will reeive a unique badge to remember the event that will show up on their forum posts.</p>
         </div>
 
         <!-- DESCRIPTION OF GAMES -->
 
         <div id = "listOfGames">
 
-        	<!-- GAME -->
-        	<h2 class = "gameTitle" id = "utherParty">Uther Party</h2>
-        		<div class = "gameDescription">
-        			<p>Game Description</p>
-        			<br>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><a href = "">link</a></p>
-        		</div>
-        	<p><a href = "#mainTitle">To Top</a></p>
-        	<img class = "gameImage" src = "" alt = "pic">
+            <!-- GAME -->
+            <h2 class = "gameTitle" id = "utherParty">Uther Party</h2>
+                <div class = "gameDescription">
+                    <p>Game Description</p>
+                    <br>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><a href = "">link</a></p>
+                </div>
+            <p><a href = "#mainTitle">To Top</a></p>
+            <img class = "gameImage" src = "" alt = "pic">
 
-        	<!-- GAME -->
-        	<h2 class = "gameTitle" id = "grandPrix">Warcraft 3 Grand Prix</h2>
-        		<div class = "gameDescription">
-        			<p>Game Description</p>
-        			<br>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><a href = "">link</a></p>
-        		</div>
-        	<p><a href = "#mainTitle" >To Top</a></p>
-         	<img class = "gameImage" src = "" alt = "pic">       	
+            <!-- GAME -->
+            <h2 class = "gameTitle" id = "grandPrix">Warcraft 3 Grand Prix</h2>
+                <div class = "gameDescription">
+                    <p>Game Description</p>
+                    <br>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><a href = "">link</a></p>
+                </div>
+            <p><a href = "#mainTitle" >To Top</a></p>
+            <img class = "gameImage" src = "" alt = "pic">          
 
-        	<!-- GAME -->
-        	<h2 class = "gameTitle" id = "warchasers" >Warchasers</h2>
-        		<div class = "gameDescription">
-        			<p>Game Description</p>
-        			<br>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><strong class = "underlineGameInfo"></strong></p>
-        			<p><a href = "">link</a></p>
-        		</div>
-        	<p><a href = "#mainTitle">To Top</a></p>
-        	<img class = "gameImage" src = "" alt = "pic">
-
-
+            <!-- GAME -->
+            <h2 class = "gameTitle" id = "warchasers" >Warchasers</h2>
+                <div class = "gameDescription">
+                    <p>Game Description</p>
+                    <br>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><strong class = "underlineGameInfo"></strong></p>
+                    <p><a href = "">link</a></p>
+                </div>
+            <p><a href = "#mainTitle">To Top</a></p>
+            <img class = "gameImage" src = "" alt = "pic">
 
 
 
-        </div>
+
+
+        
+
 
         <p> </p>
 
@@ -161,6 +171,8 @@
 
 
 
-        <p class = "banner"><br></p>
+        
+    </div>
+    <p class = "banner"><br></p>
     </body>
 </html>
