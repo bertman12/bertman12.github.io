@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"  />
+    <title>Project: Event invite</title>
+
+    <style>
+      body {
+        background-color: rgb(255, 255, 150);
+        font-family: monospace;
+        margin: 5px;
+      }
+      .banner {
+        background-color: rgb(0, 200, 0);
+        height: 50px;
+        clear: both;
+        border: 5px ridge;
+      }
+      #mainTitle {
+        font-family: fantasy;
+        text-align: center;
+      }
+      .topImages {
+        float: top;
+        margin: 10px;
+      }
+      #gameList {
+        text-decoration: none;
+      }
+      #topLeftImage {
+        float: left;
+      }
+      #topRightImage {
+        float: right;
+      }
+      #eventInfo {
+        clear: both;
+        margin: auto;
+        border: 10px ridge red;
+        padding: 5px;
+        width: 350px;
+      }
+      #eventDescription {
+        margin: auto;
+        margin-top: 10px;
+        border: 5px ridge rgb(158, 158, 158);
+        padding: 10px;
+        clear: both;
+      }
+      #listOfGames {
+        float: left;
+      }
+      .gameDescription {
+        border: 5px ridge green;
+        padding: 5px;
+        background-color: rgb(204, 204, 204);
+      }
+      .gameTitle {
+        font-family: fantasy;
+        font-size: 30px;
+        text-align: center;
+      }
+      .gameImage {
+        border: 2px solid;
+      }
+
+      .my.class {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="banner"><br /></p>
+
+    <h1 id="mainTitle">Warcraft 3 Custom Game Night</h1>
+
+    <!-- IMAGES UNDER TITLE -->
+    <div class="topImages">
+      <div id="topLeftImage">
+        <img
+          class="topImage"
+          src="https://upload.wikimedia.org/wikipedia/en/6/66/WarcraftIII.jpg"
+          alt="picture of game"
+        />
+      </div>
+      <div id="topRightImage">
+        <img
+          class="topImage"
+          src="https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg"
+          alt="picture of game"
+        />
+      </div>
+    </div>
+
+    <!-- BASIC EVENT INFO -->
+
+    <div id="eventInfo">
+      <table>
+        <tr>
+          <td><strong>When : </strong>December 15, 2020 at 5:00 pm</td>
+        </tr>
+        <tr>
+          <td><strong>Length of Event : </strong>5 hours</td>
+        </tr>
+        <tr>
+          <td><strong>Where : </strong>Discord @ randomServer</td>
+        </tr>
+        <tr>
+          <div id="gameList">
+            <td>
+              <strong>Games : </strong><em>Uther Party,</em
+              ><em> Warcraft 3 Grand Prix,</em><em> Warchasers</em>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <td><strong></strong></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- DESCRIPTION OF EVENT -->
+    <div id="eventDescription">
+      <p>
+        Join the Warcraft 3 Hive Workshop community for a custom game night on
+        December 15th at 5 pm. We will be playing many popular custom games like
+        Uther Party, Warcraft 3 Grand Prix, Warchasers and more! Those who
+        particiapate will reeive a unique badge to remember the event that will
+        show up on their forum posts.
+      </p>
+    </div>
+
+    <!-- DESCRIPTION OF GAMES -->
+
+    <div id="listOfGames">
+      <!-- GAME 1-->
+      <h2 class="gameTitle">Uther Party</h2>
+      <div class="gameDescription">
+        <p>
+          Uther Party is a classic among all custom games made by the community.
+          It features a host of mini-games for the players to play. The mini
+          games range from racing games, typing games, and much more!
+        </p>
+        <img
+          class="gameImage"
+          src="https://upload.wikimedia.org/wikipedia/en/c/ce/Warcraft_III_-_The_Frozen_Throne_-_Naga_base.jpg"
+          alt="pic"
+        />
+        <br />
+        <p><strong class="underlineGameInfo">Players : </strong>4 - 12</p>
+        <p>
+          <strong class="underlineGameInfo">Game Length: </strong>30 minutes
+        </p>
+        <p><strong class="underlineGameInfo">Created by: </strong>Billy</p>
+      </div>
+      <p><a href="#mainTitle">To Top</a></p>
+
+      <!-- GAME 2-->
+      <h2 class="gameTitle">Warcraft 3 Grand Prix</h2>
+      <div class="gameDescription">
+        <p>
+          Warcraft 3 Grand Prix is a custom game made by Blizzard themselves!
+          It's a mario kart style racing game where the players all try to reach
+          the finish line while dodging obstacles and traps from the environment
+          and the players themselves.
+        </p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/7/78/Warcraft_III_-_Alpha_gameplay_1999.png"
+          alt="image of warcraft 3"
+        />
+        <br />
+        <p><strong class="underlineGameInfo">Players: </strong> 2 - 4</p>
+        <p>
+          <strong class="underlineGameInfo">Game Length: </strong>15 minutes
+        </p>
+        <p><strong class="underlineGameInfo">Created by: </strong>Blizzard</p>
+      </div>
+      <p><a href="#mainTitle">To Top</a></p>
+
+      <!-- GAME 3-->
+      <h2 class="gameTitle">Warchasers</h2>
+      <div class="gameDescription">
+        <p>
+          Warchasers is another long time classic amongst custom games made by
+          Blizzard as well. It is a slow paced dungeon crwaler that has you
+          facing off against a variety of different monsters and bosses while
+          also trying to survive the plenty of booby traps everywhere.
+        </p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/f/fa/Reign_of_Chaos_campaign.png"
+          alt="a picture of Warchasers"
+        />
+        <br />
+        <p><strong class="underlineGameInfo">Players: </strong>4</p>
+        <p><strong class="underlineGameInfo">Game Length: </strong>1 hour</p>
+        <p><strong class="underlineGameInfo">Created by: </strong>Blizzard</p>
+      </div>
+      <p><a href="#mainTitle">To Top</a></p>
+    </div>
+    <p class="banner"><br /></p>
+  </body>
+</html>
